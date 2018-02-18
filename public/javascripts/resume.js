@@ -255,10 +255,10 @@ var contact =    `
                         <ul class="float-left list-unstyled">
                             <li>Phone       : (+62) 819-9974-9715</li>
                             <li>Email       : cahyanugraha12@gmail.com</li>
-                            <li>Facebook    : <a href="www.facebook.com/cahyanugraha12" target="_blank">cahyanugraha12</a></li>
-                            <li>Twitter     : <a href="www.twitter.com/cahyanugraha12" target="_blank">@cahyanugraha12</a></li>
-                            <li>Instagram   : <a href="www.instagram.com/cahyanugraha12" target="_blank">@cahyanugraha12</a></li>
-                            <li>LinkedIn    : <a href="www.linkedin.com/in/cahyanugraha12" target="_blank">www.linkedin.com/in/cahyanugraha12</a></li>
+                            <li>Facebook    : <a style="color: white;" href="https://www.facebook.com/cahyanugraha120499" target="_blank">www.facebook.com/cahyanugraha120499</a></li>
+                            <li>Twitter     : <a style="color: white;" href="https://www.twitter.com/cahyanugraha12" target="_blank">@cahyanugraha12</a></li>
+                            <li>Instagram   : <a style="color: white;" href="https://www.instagram.com/cahyanugraha12" target="_blank">@cahyanugraha12</a></li>
+                            <li>LinkedIn    : <a style="color: white;" href="https://www.linkedin.com/in/cahyanugraha12" target="_blank">www.linkedin.com/in/cahyanugraha12</a></li>
                         </ul>
                     </div>
                 </div>
