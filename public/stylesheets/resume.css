@@ -1,0 +1,16 @@
+.float-left {
+    text-align: justify;
+    float: left;
+    clear: both;
+}
+
+.float-right {
+    text-align: justify;
+    float: right;
+    clear: both;
+}
+
+.button-back {
+    float: right;
+    cursor: pointer;
+}

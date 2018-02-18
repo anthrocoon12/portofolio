@@ -1,14 +1,12 @@
-@()
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href=@routes.Assets.versioned("stylesheets/bootstrap.min.css")>
-        <link rel="stylesheet" href=@routes.Assets.versioned("stylesheets/bootstrap-superhero.min.css")>
-        <link rel="stylesheet" href=@routes.Assets.versioned("stylesheets/main.css")>
-        <link rel="stylesheet" href=@routes.Assets.versioned("stylesheets/resume.css")>
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css")>
+        <link rel="stylesheet" href="stylesheets/bootstrap-superhero.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/resume.css">
         <title></title>
     </head>
     <body>
@@ -25,9 +23,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#myApps" data-toggle="collapse" aria-expanded="false">My Apps</a>
                                 <ul class="collapse" id="myApps">
-                                    <li><a class="nav-link" href="#">Blog (Coming Soon!)</a></li>
-                                    <li><a class="nav-link" href="#">Message Board (Coming Soon!)</a></li>
-                                    <li><a class="nav-link" href="todo-list-cahya.herokuapp.com" target="_blank">To-Do List</a></li>
+                                    <li><a class="nav-link" href="#">Blog</a></li>
+                                    <li><a class="nav-link" href="#">Message Board</a></li>
+                                    <li><a class="nav-link" href="#">To-Do List</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -40,41 +38,41 @@
                     </header>
                     <div id="content">
                         <div class="portofolio-tile portofolio-tile-extra-left" onclick="showIntroduction()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-1.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-1.jpeg">
                             <div class="portofolio-tile-text"><a><strong>Introduction</strong></a></div>
                         </div>
                         <div class="portofolio-tile" onclick="showBasicInfo()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-2.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-2.jpeg">
                             <div class="portofolio-tile-text"><strong>Basic Info</strong></div>
                         </div>
                         <div class="portofolio-tile" onclick="showInterests()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-3.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-3.jpeg">
                             <div class="portofolio-tile-text"><strong>Interests</strong></div>
                         </div>
                         <br/>
                         <div class="portofolio-tile portofolio-tile-extra-left" onclick="showSkills()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-4.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-4.jpeg">
                             <div class="portofolio-tile-text"><strong>Skills</strong></div>
                         </div>
                         <div class="portofolio-tile" onclick="showEducation()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-5.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-5.jpeg">
                             <div class="portofolio-tile-text"><strong>Education</strong></div>
                         </div>
                         <div class="portofolio-tile" onclick="showWorkExperiences()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-6.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-6.jpeg">
                             <div class="portofolio-tile-text"><strong>Work Experiences</strong></div>
                         </div>
                         <br>
                         <div class="portofolio-tile portofolio-tile-extra-left" onclick="showArchievementsAndAwards()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-7.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-7.jpeg">
                             <div class="portofolio-tile-text"><strong>Archievement and Awards</strong></div>
                         </div>
                         <div class="portofolio-tile" onclick="showOrganizationsAndVolunteerExperiences()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-8.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-8.jpeg">
                             <div class="portofolio-tile-text"><strong>Organizations Volunteer Experience</strong></div>
                         </div>
                         <div class="portofolio-tile" onclick="showContact()">
-                            <img class="portofolio-tile-image" src=@routes.Assets.versioned("images/portofolio-tiles-9.jpeg")>
+                            <img class="portofolio-tile-image" src="images/portofolio-tiles-9.jpeg">
                             <div class="portofolio-tile-text"><strong>Contact</strong></div>
                         </div>
                         <br>
@@ -90,10 +88,10 @@
             </div>
         </div>
         
-        <script src=@routes.Assets.versioned("javascripts/jquery-3.2.1.slim.min.js")></script>
-        <script src=@routes.Assets.versioned("javascripts/popper.min.js")></script>
-        <script src=@routes.Assets.versioned("javascripts/bootstrap.min.js")></script>
-        <script src=@routes.Assets.versioned("javascripts/main.js")></script>
-        <script src=@routes.Assets.versioned("javascripts/resume.js")></script>
+        <script src="javascripts/jquery-3.2.1.slim.min.js"></script>
+        <script src="javascripts/popper.min.js"></script>
+        <script src="javascripts/bootstrap.min.js"></script>
+        <script src="javascripts/main.js"></script>
+        <script src="javascripts/resume.js"></script>
     </body>
 </html>
