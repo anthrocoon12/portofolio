@@ -9,3 +9,8 @@
     float: right;
     clear: both;
 }
+
+.button-back {
+    float: right;
+    cursor: pointer;
+}

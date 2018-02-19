@@ -4,91 +4,291 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheets/bootstrap.min.css")>
-        <link rel="stylesheet" href="stylesheets/bootstrap-superhero.min.css">
-        <link rel="stylesheet" href="stylesheets/main.css">
-        <link rel="stylesheet" href="stylesheets/resume.css">
-        <title></title>
+        <link rel="stylesheet" href="stylesheets/bootstrap-darkly.min.css")>
+        <link rel="stylesheet" href="stylesheets/main.css")>
+        <link rel="stylesheet" href="stylesheets/resume.css")>
+        <title>Pande Ketut Cahya Nugraha</title>
     </head>
     <body>
-        <div class="container-fluid">
-            <div id="row-main" class="row">
-                <div id="sidebar-column" class="col-sm-3 navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">
-                    <nav id="sidebar card text-white bg-primary">
-                        <div class="sidebar-header card-header">
-                            <h3>Sidebar</h3>
-                        </div>
+        <nav class="navbar navbar-default navbar-fixed-top" id="site-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><strong><em>Pande Ketut Cahya Nugraha</em></strong></a>
+                </div>
             
-                        <ul class="list-unstyled components">
-                            <li class="nav-item active"><a class="nav-link" href="#">Portofolio</a></li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#myApps" data-toggle="collapse" aria-expanded="false">My Apps</a>
-                                <ul class="collapse" id="myApps">
-                                    <li><a class="nav-link" href="#">Blog</a></li>
-                                    <li><a class="nav-link" href="#">Message Board</a></li>
-                                    <li><a class="nav-link" href="#">To-Do List</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="collapse navbar-collapse" id="site-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Portofolio <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Apps <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Blog (Coming Soon!)</a></li>
+                        <li><a href="#">Message Board (Coming Soon!)</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">To-Do List</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <nav class="navbar navbar-default navbar-fixed-top" id="portofolio-navbar">
+            <div class="container-fluid" style="z-index: 100;">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portofolio-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><strong><em>Portofolio</em></strong></a>
+                </div>
+            
+                <div class="collapse navbar-collapse" id="portofolio-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Tiles <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Introduction <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Basic Info <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Interests <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Skills <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Education <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Work Experiences <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Awards <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Volunteer Experiences <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Contact <span class="sr-only">(current)</span></a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <section class="container portofolio-tile-section" id="ps-0">
+            <div class="portofolio-tile" id="pt-1" onclick="showPortofolioSection(1)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-1.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Introduction</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-2" onclick="showPortofolioSection(2)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-2.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Basic Info</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-3" onclick="showPortofolioSection(3)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-3.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Interests</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-4" onclick="showPortofolioSection(4)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-4.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Skills</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-5" onclick="showPortofolioSection(5)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-5.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Education</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-6" onclick="showPortofolioSection(6)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-6.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Work Experiences</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-7" onclick="showPortofolioSection(7)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-7.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Awards</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-8" onclick="showPortofolioSection(8)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-8.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Volunteer Experiences</strong></a></div>
+            </div>
+            <div class="portofolio-tile" id="pt-9" onclick="showPortofolioSection(9)">
+                <img class="portofolio-tile-image" src="images/portofolio-tiles-9.jpeg">
+                <div class="portofolio-tile-text"><a><strong>Contact</strong></a></div>
+            </div>
+        </section>
+    
+        <section class="container portofolio-section" id="ps-1" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Introduction</strong></h1>
+                <h2>
+                    Hey there! My name is Pande Ketut Cahya Nugraha, and i'm currently an Undergraduate
+                    Student of Computer Science at Universitas Indonesia. My primary interest is Programming 
+                    (Back-end, Game Dev, and AI in particular), and gaming.
+                </h2>
+            </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-2" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Basic Info</strong></h1>
+                <p>
+                    Full Name        : Pande Ketut Cahya Nugraha<br>
+                    Nickname         : Cahya<br>
+                    Current Address	 : Jl. Masjid Al-Farouq No. 46 RT. 1/RW. 1, Kukusan, Beji, Depok<br>
+                    Birth            : Denpasar, 12 April 1999<br>
+                    Motto            : <em>Privus, Consuete, Graucus</em><br>
+                </p>
+            </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-3" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Interests</strong></h1>
+                <h4><em>Programming</em></h4><br>
+                <p>
+                I first encounter programming at 7th Grade in Junior High School. I was part of the school Computer
+                Club, and there i learn to write my first "Hello World" program, using Pascal. I also created some
+                programs like calculator and mini-games. However, i quit the Club on 8th Grade due to grades
+                problems (the coach didn't report my extracurricular grade to the homeroom teacher).
+                </p>
+                <p>
+                I later rediscovered programming at my High School. I joined the programming Club and unexpectedly
+                become the representative of my school at OSK, OSP, and OSN Informatika 2015 and 2016. My archievements
+                at OSN paved my way to Universitas Indonesia.
+                </p>
+                <br>
+                <h4><em>Gaming</em></h4><br>
+                <p>
+                    I am addicted to gaming since Elementary School. It peaked at Junior High School, where i can spend
+                    more than 6 hours gaming a day. However, since High School my gaming frequency lowers due to outdated
+                    PC and other activities.
+                </p>
+            </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-4" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Skills</strong></h1>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <ul>
+                    <li>Spring JPA</li>
+                    <li>Spring Web</li>
+                    <li>MySQL</li>
+                    <li>Play Framework</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-5" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Education</strong></h1>
+                <div class="container">
+                    <h4>Universitas Indonesia / S. Kom</h4>
+                    <h5>July 2017 - Present  Depok</h5>
+                    <h4>
+                    Currently studying at Faculty of Computer Science<br>
+                    Current GPA : 4.00</h4>
                 </div>
 
-                <div id="main-column" class="col-sm-9">
-                    <header class="navbar-fixed-top navbar-expand-lg navbar-dark" id="main-header">
-                        <h1 class="header-text"><strong><em>Pande Ketut Cahya Nugraha</em></strong></h1>
-                    </header>
-                    <div id="content">
-                        <div class="portofolio-tile portofolio-tile-extra-left" onclick="showIntroduction()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-1.jpeg">
-                            <div class="portofolio-tile-text"><a><strong>Introduction</strong></a></div>
-                        </div>
-                        <div class="portofolio-tile" onclick="showBasicInfo()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-2.jpeg">
-                            <div class="portofolio-tile-text"><strong>Basic Info</strong></div>
-                        </div>
-                        <div class="portofolio-tile" onclick="showInterests()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-3.jpeg">
-                            <div class="portofolio-tile-text"><strong>Interests</strong></div>
-                        </div>
-                        <br/>
-                        <div class="portofolio-tile portofolio-tile-extra-left" onclick="showSkills()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-4.jpeg">
-                            <div class="portofolio-tile-text"><strong>Skills</strong></div>
-                        </div>
-                        <div class="portofolio-tile" onclick="showEducation()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-5.jpeg">
-                            <div class="portofolio-tile-text"><strong>Education</strong></div>
-                        </div>
-                        <div class="portofolio-tile" onclick="showWorkExperiences()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-6.jpeg">
-                            <div class="portofolio-tile-text"><strong>Work Experiences</strong></div>
-                        </div>
-                        <br>
-                        <div class="portofolio-tile portofolio-tile-extra-left" onclick="showArchievementsAndAwards()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-7.jpeg">
-                            <div class="portofolio-tile-text"><strong>Archievement and Awards</strong></div>
-                        </div>
-                        <div class="portofolio-tile" onclick="showOrganizationsAndVolunteerExperiences()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-8.jpeg">
-                            <div class="portofolio-tile-text"><strong>Organizations Volunteer Experience</strong></div>
-                        </div>
-                        <div class="portofolio-tile" onclick="showContact()">
-                            <img class="portofolio-tile-image" src="images/portofolio-tiles-9.jpeg">
-                            <div class="portofolio-tile-text"><strong>Contact</strong></div>
-                        </div>
-                        <br>
-                    </div>
-                    <footer class="footer card-footer">
-                        <span>
-                            <strong>Developed by Pande Ketut Cahya Nugraha</strong>
-                        </span>
-                        <br/>
-                        <small>Bootstrap by Twitter | Superhero Theme by Thomas Park</small>
-                    </footer>
+                <div class="container">
+                    <h4>SMAN 3 Denpasar / High School Diploma</h4>
+                    <h5>July 2014 - May 2017,  Denpasar</h5>
+                    <br>
+                </div>
+
+                <div class="container">
+                <h4>SMPN 3 Denpasar / Junior High School</h4>
+                <h5>July 2011 - June 2014,  Denpasar</h5>
+                </div>
+
+                <div class="container">
+                <h4>SDN 3 Denpasar / Elementary School</h4>
+                <h5>July 2005 - June 2011,  Denpasar</h5>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-6" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Work Experiences</strong></h1>
+                <div class="container">
+                    <h4>GDP LABS / Software Engineer Intern</h4>
+                    <h5>January 2018 - Denpasar</h5>
+                    <p>
+                        Developing Game Chatbot for Kaskus Chat to engage more users with 2 other interns.<br>
+                        Responsible for designing database, creating services for registration and administrator functionalities.<br>
+                        Technologies used : Java, Spring Web, Spring JPA, MySQL, Flyway
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-7" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Awards</strong></h1>
+                <ul class="list-unstyled">
+                    <li>
+                        <h4>Finalist, The 2017 ACM-ICPC Asia Jakarta Regional Contest</h4>
+                        <h5>November 2017, Jakarta | ACM-ICPC</h5>
+                    </li>
+                    <li>
+                        <h4>Top 16 TOKI 2017</h4>
+                        <h5>October 2016, Bandung | Tim Olimpiade Komputer Indonesia</h5>
+                    </li>
+                    <li>
+                        <h4>Silver Medal, OSN Informatika 2016</h4>
+                        <h5>May 2016, Indonesia National Informatics Olympiad</h5>
+                    </li>
+                    <li>
+                        <h4>First Place, Informatics Olympiad Bali Logic and Computer Competition</h4>
+                        <h5>March 2016, Faculty of Mathematics and Natural Science, University of Udayana</h5>
+                    </li>
+                    <li>
+                        <h4>Second Place, Programming Category Information Technology Creative Competition</h4>
+                        <h5>November 2015, Faculty of Engineering, University of Udayana</h5>
+                    </li>
+                    <li>
+                        <h4>Bronze Medal, OSN Informatika 2015</h4>
+                        <h5>May 2015, Indonesia National Informatics Olympiad</h5>
+                    </li>
+                <ul>
+            </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-8" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Volunteer Experiences</strong></h1>
+                <div class="container">
+                    <h3>Organization</h3>
+                    <h4>Staff of Department of Student Welfare Advocacy, Student Executive Board Fasilkom UI 2018</h4>
+                    <h5>February 2018 – Present, Depok</h5>
+                </div>
+                <br>
+                <div class="container">
+                    <h3>Committe</h3>
+                    <h4>Staff of Equipment Division (Staf Perlengkapan), 12th Hindu for Generation</h4>
+                    <h5>Oct 2017 – Nov 2017, Depok</h5>
+                    <p>Staff of Equipment Division (Staf Perlengkapan) at 12th Hindu for Generation
+                    , an annual event by KMHD UI to promote Hindu students existence.</p>
+                    <br>
+                    <h4>Vice PIC of Equipment Division, TOS UI Bali 2018</h4>
+                    <h5>Dec 2017 – Jan 2018</h5>
+                    <p>Vice PIC of Equipment Division (WaPJ Perlengkapan) at TOS UI Bali 2018
+                    , a mock exam of SBMPTN for high school students in Bali.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container portofolio-section" id="ps-9" onclick="showPortofolioSection(0)">
+            <div class="jumbotron">
+                <h1><strong>Contact</strong></h1>
+                <ul class="list-unstyled">
+                    <li>Phone       : (+62) 819-9974-9715</li>
+                    <li>Email       : cahyanugraha12@gmail.com</li>
+                    <li>Facebook    : <a href="https://www.facebook.com/cahyanugraha120499" target="_blank">www.facebook.com/cahyanugraha120499</a></li>
+                    <li>Twitter     : <a href="https://www.twitter.com/cahyanugraha12" target="_blank">@cahyanugraha12</a></li>
+                    <li>Instagram   : <a href="https://www.instagram.com/cahyanugraha12" target="_blank">@cahyanugraha12</a></li>
+                    <li>LinkedIn    : <a href="https://www.linkedin.com/in/cahyanugraha12" target="_blank">www.linkedin.com/in/cahyanugraha12</a></li>
+                </ul>
+            </div>
+        </section>
         
-        <script src="javascripts/jquery-3.2.1.slim.min.js"></script>
+        <script src="javascripts/jquery-3.2.1.min.js"></script>
         <script src="javascripts/popper.min.js"></script>
         <script src="javascripts/bootstrap.min.js"></script>
         <script src="javascripts/main.js"></script>
