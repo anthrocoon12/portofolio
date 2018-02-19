@@ -1,69 +1,39 @@
-.sticky-sidebar {
-    position: fixed;
-    top: 0;
-    width: 25%;
+body {
+    padding-top: 130px;
 }
 
-.sticky-header {
-    position: fixed;
-    top: 0;
-    width: 75%;
-    z-index: 9999 !important;
-    background-color: #2B3E50;
+#site-navbar {
+    z-index: 100;
 }
 
-.sticky-header-sidebar-collapsed {
-    width: 100% !important;
+#site-navbar * {
+    z-index: 100;
 }
 
-.sticky-offset-main-column {
-    margin-left: 25%;
+#portofolio-navbar {
+    margin-top: 50px;
+    z-index: 50;
 }
 
-#row-main {
-    overflow-x: hidden;
+#site-navbar * {
+    z-index: 50;
 }
 
-#sidebar-column {
-    min-height: 100vh;
-    padding: 0;
-    border-right-style: solid;
+.portofolio-section {
+    min-width: 85vw;
+    min-height: 60vh;
+    cursor: pointer;
+    text-align: justify;
 }
 
-.sidebar-header {
-    width: 100%;
-}
-
-.nav-link {
-    color: #fff;
-}
-
-#main-column {
-    padding: 5px 0 15px;
-}
-
-#main-header {
-    border-bottom-style: solid;
-}
-
-.sidebarButton {
-    float: left;
-    margin: 5px;
-}
-
-.header-text {
-    text-align: right;
-    padding-right: 10px;
-}
-
-#content {
-    padding: 10px;
-    transition: all 0.5s ease;
+.portofolio-tile-section {
+    width: 85vh;
+    min-height: 60vh;
 }
 
 .portofolio-tile {
     position: relative;
-    width: 23vw;
+    width: 25vh;
     display: inline-block;
     margin-top: 5px;
 }
@@ -75,13 +45,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 32px;
+    font-size: 16px;
     color: orange;
 }
 
 .portofolio-tile-image {
-    width: 23vw;
-    height: 23vw;
+    width: 25vh;
+    height: 25vh;
     z-index: 100;
     transition: all 0.3s ease;
 }
@@ -98,8 +68,4 @@
 .portofolio-tile-text:hover {
     display: inline-block;
     cursor: pointer;
-}
-
-.portofolio-tile-extra-left {
-    margin-left: 20px;
 }
