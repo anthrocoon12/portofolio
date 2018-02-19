@@ -15,8 +15,12 @@ body {
     z-index: 50;
 }
 
-#site-navbar * {
+#portofolio-navbar * {
     z-index: 50;
+}
+
+.no-href-anchor {
+    cursor: pointer;
 }
 
 .portofolio-section {
