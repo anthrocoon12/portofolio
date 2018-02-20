@@ -10,6 +10,15 @@ body {
     z-index: 100;
 }
 
+#message-board-navbar {
+    margin-top: 50px;
+    z-index: 50;
+}
+
+#message-board-navbar * {
+    z-index: 50;
+}
+
 #portofolio-navbar {
     margin-top: 50px;
     z-index: 50;
@@ -72,4 +81,15 @@ body {
 .portofolio-tile-text:hover {
     display: inline-block;
     cursor: pointer;
+}
+
+.message-board-modal {
+    margin-left: 30vw;
+    position: fixed;
+    display: none;
+}
+
+.float-right {
+    margin-top: -20px;
+    float: right;
 }
